@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_itemview"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/layAEV_attend_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imgAEV_stdImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/frame_bg_color_photo" />
+
+                <TextView
+                    android:id="@+id/imgAEV_stdText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="33dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/img_round_shape" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvAEV_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="Name"
+                        android:textColor="@color/tv_textColor"
+                        android:textSize="@dimen/tv_textSize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAEV_idNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:text="100"
+                        android:textColor="@color/tv_textColor"
+                        android:visibility="invisible" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvAEV_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="myClass"
+                        android:textColor="@color/tv_textColor" />
+
+                    <TextView
+                        android:id="@+id/tvAEV_EnrollNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingRight="5dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="0608CS161014"
+                        android:textColor="@color/tv_textColor" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#d9d9d9"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rgAttend_Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbt_attend_present"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="P"
+                    android:textColor="@color/tv_textColor"
+                    android:textSize="@dimen/tv_textSize" />
+
+                <RadioButton
+                    android:id="@+id/rbt_attend_absent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="A"
+                    android:textColor="@color/tv_textColor"
+                    android:textSize="@dimen/tv_textSize" />
+
+                <RadioButton
+                    android:id="@+id/rbt_attend_leav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="L"
+                    android:textColor="@color/tv_textColor"
+                    android:textSize="@dimen/tv_textSize" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

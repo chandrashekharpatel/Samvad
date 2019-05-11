@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/ic_attendance"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/nav_fees"
+            android:icon="@drawable/ic_fees"
+            android:title="Fees" />
+        <item
+            android:id="@+id/nav_calender"
+            android:icon="@drawable/ic_calendar"
+            android:title="Calender" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_messages"
+            android:title="Messages" />
+    </group>
+
+</menu>

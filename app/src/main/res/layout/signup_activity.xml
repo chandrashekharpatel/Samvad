@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="School"
+                    android:textColor="@color/tv_textColor"
+                    android:textSize="@dimen/tv_textSize" />
+
+                <TextView
+                    android:id="@+id/signup_sp_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signup_ll_admNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Admission Number "
+                    android:textColor="@color/tv_textColor"
+                    android:textSize="@dimen/tv_textSize" />
+
+                <EditText
+                    android:id="@+id/signup_et_admNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="@dimen/tv_EditTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signup_ll_OTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="OTP"
+                    android:textColor="@color/tv_textColor"
+                    android:textSize="@dimen/tv_textSize" />
+
+                <EditText
+                    android:id="@+id/signup_et_OTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_text"
+                    android:inputType="numberPassword"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="@dimen/tv_EditTextSize" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signup_btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_button_normal"
+                android:text="submit"
+                android:textColor="@color/btn_textColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recSignUp_schoolList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+            <LinearLayout
+                android:id="@+id/tvRecSignUp_NoInterNetConn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="5dp"
+                android:visibility="invisible"
+                android:background="@drawable/bg_itemview"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:text="Add Message">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="No InterNet Connection"
+                    android:textColor="@color/tv_textColor"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_info_message" />
+            </LinearLayout>
+        </FrameLayout>
+
+</LinearLayout>
